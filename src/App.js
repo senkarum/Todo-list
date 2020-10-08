@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {observer} from "mobx-react";
+import Header from "./components/header";
+import Todo from "./components/todo";
+import DetailsItem from "./components/details/detailsItem/DetailsItem";
+import DetailsList from "./components/details/detailsList/DetailsList";
+import {Route, Switch} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+@observer
+class App extends React.Component {
+
+    render() {
+        return (
+            <>
+                <Header/>
+                <Switch>
+                    <Route exact path='/' render={() => <Todo/>}/>
+                    <Route exact path='/details' render={(props) => <DetailsList {...props}/>}/>
+                    <Route exact path='/details/:id?' render={(props) => <DetailsItem {...props}/>}/>
+                </Switch>
+            </>
+        );
+    }
 }
 
 export default App;

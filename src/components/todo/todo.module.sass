@@ -1,0 +1,138 @@
+@import "./src/assets/css/vars.sass"
+.todo
+  padding: $default-padding
+  .item
+    max-width: 280px
+    width: 100%
+    box-shadow: $default-box-shadow
+    padding: $default-padding*1.5 $default-padding
+    border: 2px solid $color-light
+    margin: $default-gap/2
+    position: relative
+    background: transparent
+    color: $color-light
+    @media (max-width: $media-m)
+      max-width: 300px
+      margin: $default-gap / 2
+    @media (max-width: $media-s)
+      max-width: 100%
+      margin: $default-gap / 2 0
+  .label
+    font-size: $font-size-medium
+    text-align: center
+    margin-bottom: $default-gap/2
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+  .text
+    height: 150px
+    overflow: auto
+    @media (max-width: $media-m)
+      height: 100px
+    @media (max-width: $media-s)
+      height: auto
+  .more
+    font-weight: $font-weight-bold
+    font-size: $font-size-little
+    text-decoration: underline
+    text-align: center
+    color: $accent-color
+    margin: $default-gap/2 auto 0
+    &:hover
+      text-decoration: none
+  .list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    position: relative
+    min-height: 232px
+    @media (max-width: $media-s)
+      display: block
+  .form-container
+    position: relative
+    max-width: 550px
+    margin: $default-gap auto
+  .add
+    display: block
+    text-align: center
+    position: relative
+    input, textarea
+      display: block
+      width: 100%
+      padding: $default-padding/2
+      font-size: $font-size-main
+      font-family: $font-family
+      margin-bottom: $default-gap/2
+      resize: none
+      outline: none
+      border: none
+      border-bottom: 3px solid $color-light
+      background: transparent
+      color: $color-light
+  .btn-container
+    display: flex
+    justify-content: space-between
+    flex-wrap: nowrap
+    margin-top: $default-gap
+  .todo-btn
+    font-size: $font-size-little
+    width: 48%
+    &.done
+      background: transparent
+      color: $color-success
+      border-color: $color-success
+      &:hover
+        background:  $color-success
+        color: $color-light
+        border-color: $color-success
+    &.del
+      background: transparent
+      color: $color-attention
+      border-color: $color-attention
+      &:hover
+        background: $color-attention
+        color: $color-light
+        border-color: $color-attention
+    &.work
+      background: transparent
+      color: $accent-color
+      border-color:  $accent-color
+      &:hover
+        background:  $accent-color
+        color: $color-light
+        border-color:  $accent-color
+  .status
+    padding: $default-padding/4
+    margin-bottom: $default-gap/2
+    font-size: $font-size-little
+    font-weight: $font-weight-bold
+    color: $color-light
+    text-align: center
+    &.work
+      background: $accent-color
+    &.done
+      background: $color-success
+  .error
+    color: $color-attention
+    margin: $default-gap/2 0
+    font-weight: $font-weight-bold
+  .filter
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin: 0 auto
+    padding: $default-padding 0
+    color: $color-light
+    select
+      max-width: 160px
+      margin: 0 0 0 $default-gap/2
+
+
+
+
+
+
+
+
+

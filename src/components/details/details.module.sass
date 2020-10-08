@@ -1,0 +1,39 @@
+@import "../../assets/css/vars"
+.details
+  padding: $default-padding
+  max-width: 800px
+  margin: $default-gap auto
+  border: 3px solid $color-light
+  color: $color-light
+  @media (max-width: $media-s)
+    margin: $default-gap $default-gap/2
+  .row:not(:last-of-type)
+    border-bottom: 3px solid $color-light
+    padding-bottom: $default-gap/2
+    margin-bottom: $default-gap/2
+  .name
+    font-size: $font-size-little
+    margin-bottom: $default-gap/4
+    text-align: left
+  .choice
+    font-size: $font-size-big
+    color: $color-light
+    text-align: center
+  .label
+    font-size: $font-size-big
+    color: $color-light
+  .text
+    color: $color-light
+  .note
+    display: block
+    width: 100%
+    background: transparent
+    resize: none
+    color: $color-light
+    font-size: $font-size-main
+    border: none
+
+  select
+    display: block
+    max-width: 240px
+
