@@ -7,14 +7,13 @@ In the project directory, you can run:
 
 ### `node server.js`
 
-cd src <br>
-cd server <br>
-Run the command: <b>node server.js</b>
+cd src/server <br>
+Run the command: <b> node server.js </b>
 
 ### `yarn start`
 
 Runs the app in the development mode.<br />
-Run the command <b>yarn start</b> at the root of the project
+Run the command <b> yarn start </b> at the root of the project
 
 Open [http://localhost:3100](http://localhost:3100) to view it in the browser.
 
