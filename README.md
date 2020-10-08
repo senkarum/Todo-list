@@ -16,6 +16,6 @@ Run the command: <b>node server.js</b>
 Runs the app in the development mode.<br />
 Run the command <b>yarn start</b> at the root of the project
 
-Open [http://localhost:3200](http://localhost:3200) to view it in the browser.
+Open [http://localhost:3100](http://localhost:3100) to view it in the browser.
 
 
